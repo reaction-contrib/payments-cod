@@ -1,0 +1,31 @@
+[{
+  "language": "German",
+  "i18n": "de",
+  "ns": "payments-cod",
+  "translation": {
+    "reaction-payments": {
+      "admin": {
+        "shortcut": {
+          "cashondeliveryLabel": "Cash-on-Delivery",
+          "cashondeliveryTitle": "Cash-on-Delivery"
+        },
+        "dashboard": {
+          "cashondeliveryLabel": "Cash-on-Delivery",
+          "cashondeliveryTitle": "Cash-on-Delivery",
+          "cashondeliveryDescription": "Cash-on-Delivery payments"
+        },
+        "paymentSettings": {
+          "cashondeliveryLabel": "Nachnahmezahlung"
+        }
+      }
+    },
+    "payments-cod": {
+      "spreadSheetKey": "Google-Spread-Sheet Id",
+      "additionalCharge": "zzgl. Nachnahmegebühr",
+      "alerts": {
+        "saveFailed": "Fehler beim Speichern",
+        "saveSuccess": "Einstellungen gespeichert"
+      }
+    }
+  }
+}]
