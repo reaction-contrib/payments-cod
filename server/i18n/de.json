@@ -6,25 +6,31 @@
     "reaction-payments": {
       "admin": {
         "shortcut": {
-          "cashondeliveryLabel": "Cash-on-Delivery",
-          "cashondeliveryTitle": "Cash-on-Delivery"
+          "cashondeliveryLabel": "Nachnahme",
+          "cashondeliveryTitle": "Nachnahme"
         },
         "dashboard": {
-          "cashondeliveryLabel": "Cash-on-Delivery",
-          "cashondeliveryTitle": "Cash-on-Delivery",
-          "cashondeliveryDescription": "Cash-on-Delivery payments"
+          "cashondeliveryLabel": "Nachnahme",
+          "cashondeliveryTitle": "Nachnahme",
+          "cashondeliveryDescription": "Zahlung per Nachnahme"
         },
         "paymentSettings": {
-          "cashondeliveryLabel": "Nachnahmezahlung"
+          "cashondeliveryLabel": "Zahlung per Nachnahme"
         }
       }
     },
     "payments-cod": {
-      "spreadSheetKey": "Google-Spread-Sheet Id",
-      "additionalCharge": "zzgl. Nachnahmegebühr",
+      "paymentMethod": "Zahlung per Nachnahme",
+      "noSettingsAvailable": "Dieses Plugin benötigt keine Einstellungen.",
       "alerts": {
         "saveFailed": "Fehler beim Speichern",
-        "saveSuccess": "Einstellungen gespeichert"
+        "saveSuccess": "Einstellungen gespeichert",
+        "errorSubmitPayment": "Bestellung per Nachnahme konnte nicht abgeschlossen werden."
+      },
+      "checkout": {
+        "paymentMethod": {
+          "payments-cod": "Nachnahme"
+        }
       }
     }
   }

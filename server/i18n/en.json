@@ -20,11 +20,17 @@
       }
     },
     "payments-cod": {
-      "spreadSheetKey": "Google Spread Sheet Key",
-      "additionalCharge": "Additional charge",
+      "paymentMethod": "Cash-on-Delivery",
+      "noSettingsAvailable": "This plugin does not provide any settings.",
       "alerts": {
         "saveFailed": "Saving settings failed",
-        "saveSuccess": "Settings successfully saved."
+        "saveSuccess": "Settings successfully saved.",
+        "errorSubmitPayment": "Error occured during processing COD order."
+      },
+      "checkout": {
+        "paymentMethod": {
+          "payments-cod": "Cash-on-Delivery"
+        }
       }
     }
   }

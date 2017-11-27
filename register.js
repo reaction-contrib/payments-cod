@@ -7,10 +7,15 @@ Reaction.registerPackage({
   meta: {
     version: "1.0.0"
   },
-  autoEnable: false,
+  autoEnable: true,
   settings: {
-    spreadSheetKey: "",
-    pincodes: []
+    "payments-cod": {
+      enabled: false,
+      support: [
+        "Authorize",
+        "Capture"
+      ]
+    }
   },
   registry: [
     // Settings panel

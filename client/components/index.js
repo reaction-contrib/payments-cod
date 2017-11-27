@@ -1,1 +1,2 @@
 import "./codPaymentSettings";
+import "./codPaymentForm";
