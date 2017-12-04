@@ -17,7 +17,7 @@ class CodPaymentForm extends React.Component {
     const paymentMethod = {
       processor: "payments-cod",
       paymentPackageId: this.props.paymentPackageId,
-      method: "debit",
+      method: "credit",
       amount: Number(this.props.cartTotal),
       paymentSettingsKey: "payments-cod",
       transactionId: Random.id(),

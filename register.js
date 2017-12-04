@@ -31,7 +31,31 @@ Reaction.registerPackage({
       provides: ["paymentMethod"],
       icon: "fa fa-money"
     }
-  ]
+  ],
+  layout: [{
+    state: "approved",
+    template: "CodPaymentMethodApproved",
+    workflow: "paymentMethod"
+  }, {
+    state: "completed",
+    // template: "", // no template to render for now
+    workflow: "paymentMethod"
+  }],
+  stateflows: [{
+    name: "payments-cod", // same as in paymentSettingsKey
+    workflow: "paymentMethod",
+    collection: "Orders",
+    querySelector: "{ \"_id\": \"${this.docId}\", \"billing.shopId\": \"${this.shopId}\"}",
+    locationPath: "billing.$.paymentMethod.workflow",
+    strategy: "StateflowSimpleStrategy",
+    fsm: {
+      init: "created",
+      transitions: [
+        { name: "approvePayment", from: "created", to: "approved" },
+        { name: "paymentReceived", from: "approved", to: "completed" }
+      ]
+    }
+  }]
 });
 
 
